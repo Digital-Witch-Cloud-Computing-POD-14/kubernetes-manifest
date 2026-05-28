@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: bank-backend-container
-        image: :6
+        image: :7
         ports:
         - containerPort: 8080
         env:
