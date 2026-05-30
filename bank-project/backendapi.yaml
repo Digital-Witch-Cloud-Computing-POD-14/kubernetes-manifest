@@ -18,6 +18,11 @@ spec:
         ports:
         - containerPort: 8080
         env:
+        
+        - name: FRONTEND_URL
+          value: "https://themainpod14.online"
+          
+        
         - name: DB_HOST
           valueFrom:
             configMapKeyRef:
@@ -33,7 +38,6 @@ spec:
             configMapKeyRef:
               name: bank-config
               key: DB_NAME
-
         - name: DB_USERNAME
           valueFrom:
             secretKeyRef:
