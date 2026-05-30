@@ -48,3 +48,4 @@ spec:
             secretKeyRef:
               name: bank-secret
               key: DB_PASSWORD
+#tt
